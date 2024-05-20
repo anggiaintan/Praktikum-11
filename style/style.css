@@ -1,6 +1,79 @@
-.container{
-    border: 3px double black;
+/* Style for the container */
+.container {
+    border: 3px double maroon;
     height: auto;
-    width: 300px;
-    background-color: tan;
+    width: 350px;
+    background-color:wheat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the header */
+.header h3 {
+    text-align: center;
+    color:maroon;
+    font-family: 'Georgia', serif;
+}
+
+/* Style for form labels */
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for form inputs */
+form input[type="text"],
+form input[type="date"],
+form textarea,
+form select {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Style for radio buttons */
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style for form textarea */
+form textarea {
+    resize: vertical;
+}
+
+/* Style for buttons */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Hover effect for buttons */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Adding some margin for labels and radio inputs */
+form p, form label, form input[type="radio"] + label {
+    margin-top: 10px;
+}
+
+/* Ensuring the form stays within the container */
+form {
+    margin: 0;
+    padding: 0;
 }

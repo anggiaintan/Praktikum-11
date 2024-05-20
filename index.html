@@ -11,7 +11,7 @@
         <div class="header">
             <h3>Pendaftaran Peminatan</h3>
         </div>
-        <form action="">
+        <form id="registrationForm" action="">
             <label for="nama">Nama</label><br>
             <input type="text" placeholder="Masukkan nama anda" id="nama"><br><br>
 
@@ -33,7 +33,14 @@
 
             <label for="alamat">Alamat</label><br>
             <textarea name="alamat" id="alamat" placeholder="Masukkan alamat lengkap kamu" cols="30" rows="5"></textarea><br><br>
-            <button type="submit" onclick="kirimData()">Kirim</button>
+
+            <label for="angkatan">Angkatan</label><br>
+            <select id="angkatan" name="angkatan"></select><br><br>
+
+            <label for="date">Tanggal</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <button type="button" onclick="kirimData()">Kirim</button>
         </form>
     </div>
     <script src="script/script.js"></script>
